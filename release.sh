@@ -21,5 +21,5 @@ rm "$OUT"/WheelFlip-arm64 "$OUT"/WheelFlip-x86_64
 codesign --force --sign - "$APP"
 codesign --verify --strict "$APP"
 
-ditto -c -k --keepParent "$APP" "$OUT/WheelFlip-$VERSION.zip"
+ditto -c -k --norsrc --noextattr --keepParent "$APP" "$OUT/WheelFlip-$VERSION.zip"
 shasum -a 256 "$OUT/WheelFlip-$VERSION.zip"
