@@ -7,8 +7,9 @@ VERSION=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" Info.pl
 OUT=build/release
 APP=$OUT/WheelFlip.app
 rm -rf "$OUT"
-mkdir -p "$APP/Contents/MacOS"
+mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp Info.plist "$APP/Contents/Info.plist"
+cp Assets/AppIcon.icns Assets/MenuBarIconTemplate*.png "$APP/Contents/Resources/"
 
 for ARCH in arm64 x86_64; do
     swiftc -O -target "$ARCH-apple-macos13" -o "$OUT/WheelFlip-$ARCH" Sources/Scroll.swift Sources/main.swift
