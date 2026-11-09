@@ -17,7 +17,7 @@ swiftc -O -o "$APP/Contents/MacOS/WheelFlip" Sources/Scroll.swift Sources/main.s
 
 # A real certificate keeps the Accessibility grant across rebuilds. An ad-hoc signature loses it each time.
 IDENTITY=$(security find-identity -v -p codesigning | awk '/Apple Development/ {print $2; exit}')
-codesign --force --sign "${IDENTITY:--}" "$APP"
+codesign --force --options runtime --sign "${IDENTITY:--}" "$APP"
 
 pkill -x WheelFlip || true
 rm -rf /Applications/WheelFlip.app

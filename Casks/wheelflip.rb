@@ -1,6 +1,6 @@
 cask "wheelflip" do
-  version "1.1"
-  sha256 "5e795c4277b0ea32805e4debd1a4555ee6b50c9e8a6bb4d24eba71e96abd8c69"
+  version "1.1.1"
+  sha256 "244d1ffd6d7d050782c2ead556dd363fb0fd53d37744ec4a160821492b68d92d"
 
   url "https://github.com/tim-jordan-1/homebrew-wheelflip/releases/download/v#{version}/WheelFlip-#{version}.zip"
   name "WheelFlip"

@@ -18,8 +18,9 @@ lipo -create -output "$APP/Contents/MacOS/WheelFlip" "$OUT/WheelFlip-arm64" "$OU
 rm "$OUT"/WheelFlip-arm64 "$OUT"/WheelFlip-x86_64
 
 # Ad-hoc signing keeps personal certificate details out of the public binary.
-codesign --force --sign - "$APP"
+codesign --force --options runtime --sign - "$APP"
 codesign --verify --strict "$APP"
+codesign -dv "$APP" 2>&1 | grep "flags=.*runtime" >/dev/null
 
 ditto -c -k --norsrc --noextattr --keepParent "$APP" "$OUT/WheelFlip-$VERSION.zip"
 shasum -a 256 "$OUT/WheelFlip-$VERSION.zip"
