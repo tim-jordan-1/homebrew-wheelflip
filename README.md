@@ -6,11 +6,7 @@ The app needs macOS 13 or later. It runs on Apple silicon and Intel Macs.
 
 ## Install with Homebrew
 
-Run these two commands:
-
-```bash
-brew tap tim-jordan-1/wheelflip https://github.com/tim-jordan-1/WheelFlip
-```
+Run this command:
 
 ```bash
 brew install --cask tim-jordan-1/wheelflip/wheelflip
@@ -20,7 +16,7 @@ WheelFlip is not notarized, which means that Apple did not scan this build. The 
 
 ## Install from the zip file
 
-1. Download `WheelFlip-1.0.zip` from the [releases page](https://github.com/tim-jordan-1/WheelFlip/releases).
+1. Download `WheelFlip-1.0.zip` from the [releases page](https://github.com/tim-jordan-1/homebrew-wheelflip/releases).
 2. Unzip the file.
 3. Move `WheelFlip.app` to `/Applications`.
 4. Run this command to remove the quarantine flag:

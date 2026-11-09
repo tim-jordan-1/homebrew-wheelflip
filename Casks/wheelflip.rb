@@ -2,10 +2,10 @@ cask "wheelflip" do
   version "1.0"
   sha256 "b3e446ce86e857dd2115f4f42f9d15c7037026d4d285086f4d4177475301cb0c"
 
-  url "https://github.com/tim-jordan-1/WheelFlip/releases/download/v#{version}/WheelFlip-#{version}.zip"
+  url "https://github.com/tim-jordan-1/homebrew-wheelflip/releases/download/v#{version}/WheelFlip-#{version}.zip"
   name "WheelFlip"
   desc "Invert mouse wheel scrolling without changing the trackpad"
-  homepage "https://github.com/tim-jordan-1/WheelFlip"
+  homepage "https://github.com/tim-jordan-1/homebrew-wheelflip"
 
   depends_on macos: :ventura
 
