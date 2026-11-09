@@ -100,8 +100,9 @@ final class App: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     private func updateIcon() {
-        let name = tap == nil ? "exclamationmark.triangle" : "computermouse"
-        statusItem.button?.image = NSImage(systemSymbolName: name, accessibilityDescription: tap == nil ? "WheelFlip is not active" : "WheelFlip is active")
+        let image = tap == nil ? NSImage(systemSymbolName: "exclamationmark.triangle", accessibilityDescription: nil) : NSImage(named: "MenuBarIconTemplate")
+        image?.accessibilityDescription = tap == nil ? "WheelFlip is not active" : "WheelFlip is active"
+        statusItem.button?.image = image
     }
 
     func menuWillOpen(_ menu: NSMenu) {

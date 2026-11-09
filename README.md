@@ -1,3 +1,5 @@
+<p align="center"><img src="Assets/logo.png" width="160" alt="WheelFlip logo"></p>
+
 # WheelFlip
 
 WheelFlip is a macOS menu bar app that inverts mouse wheel scrolling. Your trackpad keeps its own scroll direction.
