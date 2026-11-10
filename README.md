@@ -42,7 +42,7 @@ The script runs the tests, replaces `/Applications/WheelFlip.app`, and opens the
 1. Open WheelFlip from `/Applications`.
 2. Open System Settings, then Privacy & Security, then Accessibility.
 3. Turn on WheelFlip.
-4. Make sure that the mouse icon is in the menu bar. This icon means that the app is active.
+4. Make sure that the WheelFlip icon in the menu bar is not dimmed. An icon that is not dimmed means that the app is active.
 5. Optional: Click the menu bar icon, then click Open at Login.
 
 WheelFlip inverts vertical scrolling by default. Use the menu bar icon to turn vertical or horizontal inversion on or off.
