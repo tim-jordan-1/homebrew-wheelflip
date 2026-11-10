@@ -100,9 +100,10 @@ final class App: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     private func updateIcon() {
-        let image = tap == nil ? NSImage(systemSymbolName: "exclamationmark.triangle", accessibilityDescription: nil) : NSImage(named: "MenuBarIconTemplate")
+        let image = NSImage(named: "MenuBarIconTemplate")
         image?.accessibilityDescription = tap == nil ? "WheelFlip is not active" : "WheelFlip is active"
         statusItem.button?.image = image
+        statusItem.button?.appearsDisabled = tap == nil
     }
 
     func menuWillOpen(_ menu: NSMenu) {

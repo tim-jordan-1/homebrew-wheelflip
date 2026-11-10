@@ -18,7 +18,7 @@ WheelFlip is not notarized, which means that Apple did not scan this build. The 
 
 ## Install from the zip file
 
-1. Download `WheelFlip-1.1.1.zip` from the [releases page](https://github.com/tim-jordan-1/homebrew-wheelflip/releases).
+1. Download `WheelFlip-1.1.2.zip` from the [releases page](https://github.com/tim-jordan-1/homebrew-wheelflip/releases).
 2. Unzip the file.
 3. Move `WheelFlip.app` to `/Applications`.
 4. Run this command to remove the quarantine flag:
@@ -47,9 +47,9 @@ The script runs the tests, replaces `/Applications/WheelFlip.app`, and opens the
 
 WheelFlip inverts vertical scrolling by default. Use the menu bar icon to turn vertical or horizontal inversion on or off.
 
-## Fix a warning icon
+## Fix a dimmed icon
 
-A triangle icon means that WheelFlip cannot change scroll events. Do these steps:
+A dimmed icon means that WheelFlip cannot change scroll events. Do these steps:
 
 1. Open System Settings, then Privacy & Security, then Accessibility.
 2. Select WheelFlip and remove it with the minus button.
